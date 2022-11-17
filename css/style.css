@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Pixel';
+    src: local('Pixel'),
+    url(../fonts/PressStart2P-Regular.ttf);
+}
+
+.game {
+    position: relative;
+    width: 1440px;
+    height: 270px;
+    border: cadetblue 2px solid;
+    margin: auto;
+    background-image: url('../img/background.png');
+}
+
+.newGame {
+    width: 1440px;
+    height: 270px;
+    position: absolute;
+    margin: auto;
+    background-color: #323236;
+    opacity: 35%;
+}
+
+.newGame__text {
+    font-family: Pixel;
+    font-size: 30px;
+    text-align: center;
+    color: #ffb300;
+    position: absolute;
+    left: 400px;
+    top: 100px;
+}
+.coupon__text {
+    position: absolute;
+    font-family: Pixel;
+    font-size: 10px;
+    color: #ffc907;
+    left: 75px;
+    top: 45px;
+}
+.win__text {
+    position: absolute;
+    font-family: Pixel;
+    font-size: 35px;
+    color: #ffeb9f;
+    top: 120px;
+}
+#winText1 {
+    left: 220 px;
+
+}
+#winText2 {
+    right: 30px;
+}
+
+#newGameText2 {
+    font-size: 20px;
+}
+
+.winScreen {
+    opacity: 0;
+    width: 1440px;
+    height: 270px;
+    position: relative;
+    margin: auto;
+    background-image: url('../img/bg.png');
+}
+
+.circle {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 595px;
+    top: 10px;
+    background-image: url('../img/circle.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.coupon {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    left: 570px;
+    top: 80px;
+    background-image: url('../img/coupon.png');
+    background-position: center;
+    animation: sizeChange 1s linear infinite;
+}
+
+
+#floor {
+    position: absolute;
+    width: 1440px;
+    height: 50px;
+    bottom: 0;
+    background-image: url('../img/floor.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#hero {
+    position: absolute;
+    width: 42px;
+    height: 116px;
+    bottom: 43px;
+    background-image: url('../img/gg.png');
+    background-position: center;
+    background-size: cover;
+}
+
+
+.hanger {
+    position: absolute;
+    width: 60px;
+    height: 100px;
+    background-image: url('../img/hanger.png');
+    background-position: center;
+}
+#hanger1 {
+    top: 0;
+    left: 361px;
+}
+#hanger2 {
+    top: 0;
+    left: 946px;
+    transform: scale(-1, 1);
+}
+
+.mannequin {
+    position: absolute;
+    width: 50px; /*60*/
+    height: 87px; /*83*/
+    background-image: url('../img/maneq.png');
+    background-position: center;
+}
+#mannequin1 {
+    bottom: 45px;
+    left: 204px;
+}
+#mannequin2 {
+    bottom: 45px;
+    left: 739px;
+}
+#mannequin3 {
+    bottom: 40px;
+    left: 766px;
+    width: 55px; /*60*/
+    height: 92px; /*83*/
+    background-size: cover;
+    transform: scale(-1, 1);
+}
+
+#mannequin4 {
+    width: 80px;
+    height: 136px;
+    bottom: 5px;
+    left: 315px;
+    background-size: cover;
+    transform: scale(-1, 1);
+}
+
+
+.table {
+    position: absolute;
+    width: 83px;
+    height: 48px;
+    background-image: url('../img/clothes.png');
+    background-position: center;
+    background-size: cover;
+}
+#table1 {
+    bottom: 34px;
+    left: 505px;
+}
+#table2 {
+    width: 103px;
+    height: 40px;
+    bottom: 0px;
+    left: 1000px;
+    background-position: top;
+}
+
+#reward {
+    position: absolute;
+    width: 65px;
+    height: 73px;
+    background-image: url('../img/reward.png');
+    background-position: center;
+    bottom: 30px;
+    left: 1320px;
+}
+
+
+.jump {
+    animation:  jump 0.6s linear;
+}
+@keyframes jump {
+    0% {
+        bottom: 45px;
+    }
+    20% {
+        bottom: 141px;
+    }
+    50% {
+        bottom: 154px;
+    }
+    80% {
+        bottom: 140px;
+    }
+    100% {
+        bottom: 45px;
+    }
+}
+
+
+.rotation {
+    animation: rotate 3s infinite linear;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.winAnim {
+    animation: winAnim 300ms none;
+}
+@keyframes winAnim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+.flash {
+    animation: flash 1s infinite;
+}
+@keyframes heroFlash {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+.opacity {
+    animation: op 0.3s none;
+}
+
+@keyframes op {
+    0% {
+        opacity: 35%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.heroFlash {
+    animation: heroFlash 300ms infinite;
+}
+@keyframes flash {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+@keyframes sizeChange {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2)
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.animWalk {
+    animation: walk 600ms infinite;
+}
+@keyframes walk {
+    0% {
+        background-image: url('../img/gg_nyu_bok_shag1.png');
+    }
+    25% {
+        background-image: url('../img/gg_nyu_bok_shag1.png');
+    }
+    50% {
+        background-image: url('../img/gg_nyu_bok_shag2.png');
+    }
+    75% {
+        background-image: url('../img/gg_nyu_bok_shag3.png');
+    }
+    100% {
+        background-image: url('../img/gg_nyu_bok_shag4.png');
+    }
+}
