@@ -32,7 +32,7 @@ const begin = () => {
             hero.classList.remove('jump');
             hero.classList.remove('animWalk');
             hero.classList.add('heroFlash');
-            hero.style.backgroundImage = 'url(../img/gg.png)'
+            //
 
             setTimeout(() => {
                 hero.classList.remove('heroFlash');
@@ -51,7 +51,6 @@ const begin = () => {
 
     let draw = (timePassed) => {
         hero.style.left = timePassed / 3 + 'px';
-        console.log(getCoords(hero).right);
 
         if (getCoords(hero).right > 1388) {
             win();
@@ -64,7 +63,7 @@ const jump = () => {
     hero.classList.remove('animWalk');
     if (hero.classList !== 'jump') {
         hero.classList.add('jump');
-        hero.style.backgroundImage = 'url(../img/pryzhok.png)'
+    //
     }
 
     setTimeout(() => {

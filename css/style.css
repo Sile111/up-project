@@ -204,18 +204,23 @@
 @keyframes jump {
     0% {
         bottom: 45px;
+        background-image: url(../img/pryzhok.png);
     }
     20% {
         bottom: 141px;
+        background-image: url(../img/pryzhok.png);
     }
     50% {
         bottom: 154px;
+        background-image: url(../img/pryzhok.png);
     }
     80% {
         bottom: 140px;
+        background-image: url(../img/pryzhok.png);
     }
     100% {
         bottom: 45px;
+        background-image: url(../img/pryzhok.png);
     }
 }
 
@@ -252,12 +257,15 @@
 @keyframes heroFlash {
     0% {
         opacity: 100%;
+        background-image: url(../img/gg.png);
     }
     50% {
         opacity: 0;
+        background-image: url(../img/gg.png);
     }
     100% {
         opacity: 100%;
+        background-image: url(../img/gg.png);
     }
 }
 
